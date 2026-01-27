@@ -10,9 +10,6 @@ I’m using this setup to learn how clusters work, understand master & worker no
  I practiced **kubectl commands, deployments, services, and port-forwarding** without using any cloud resources.
 
 
-
-## Commands I Used to Create Cluster
-
 # Check Kind version
 kind --version
 
@@ -25,9 +22,11 @@ kubectl get nodes
 # Delete cluster when done
 kind delete cluster --name kind_cluster
 
-# Kubectl Commands I Practiced
+# To get all contexts
+kubectl config get-contexts
 
-# List all nodes
-kubectl get nodes
+# To change cluster
+kubectl config use-context kind-cluster
+
 
 
