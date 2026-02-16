@@ -1,0 +1,9 @@
+apiVersion: devops.com/v1
+kind: Website
+metadata:
+  name: my-website
+spec:
+  domain: example.com
+  replicas: 2
+  image: nginx
+
